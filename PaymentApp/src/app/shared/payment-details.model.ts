@@ -1,9 +1,7 @@
-import { ThrowStmt } from "@angular/compiler";
-
 export class PaymentDetail {
-    PaymentDetailId: number = 0;
-    CardOwnerName: string = '';
-    CardNumber: string = '';
-    ExperiationDate: string = '';
-    SecurityCode: string = '';
+    paymentDetailId: number=0;
+    cardOwnerName: string='';
+    cardNumber: string='';
+    expirationDate: string='';
+    securityCode: string='';
 }
