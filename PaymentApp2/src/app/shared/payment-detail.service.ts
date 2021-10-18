@@ -10,11 +10,12 @@ export class PaymentDetailService {
 
   constructor(private htpp: HttpClient) { }
 
-  readonly baseURL = 'https://localhost:61236/api/PaymentDetail'
+  readonly baseURL = 'https://localhost:44315/api/PaymentDetail'
+  // readonly baseURL = 'https://localhost:44315/swagger/index.html';
 
   formData:PaymentDetail = new PaymentDetail();
 
   postPaymentDetail() {
-    this.htpp.post('')
+    return this.htpp.post(this.baseURL, this.formData);
   }
 }
