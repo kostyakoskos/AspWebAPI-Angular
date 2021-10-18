@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { PaymentDetail } from './payment-detail.model';
+import { HttpClient } from '@angular/common/http'
 
 
 @Injectable({
@@ -7,7 +8,9 @@ import { PaymentDetail } from './payment-detail.model';
 })
 export class PaymentDetailService {
 
-  constructor() { }
+  constructor(private htpp: HttpClient) { }
 
-  // formData:PaymentDetail = new PaymentDetail();
+  readonly baseURL = 'https://localhost:61236/api/PaymentDetail'
+
+  formData:PaymentDetail = new PaymentDetail();
 }

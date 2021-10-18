@@ -14,5 +14,5 @@ export class PaymentDetailsFormComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  formData:PaymentDetail = new PaymentDetail();
+  // formData:PaymentDetail = new PaymentDetail();
 }
