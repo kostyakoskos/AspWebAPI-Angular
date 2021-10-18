@@ -13,4 +13,8 @@ export class PaymentDetailService {
   readonly baseURL = 'https://localhost:61236/api/PaymentDetail'
 
   formData:PaymentDetail = new PaymentDetail();
+
+  postPaymentDetail() {
+    this.htpp.post('')
+  }
 }
