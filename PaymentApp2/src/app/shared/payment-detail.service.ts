@@ -13,7 +13,7 @@ export class PaymentDetailService {
   readonly baseURL = 'https://localhost:44315/api/PaymentDetail'
   // readonly baseURL = 'https://localhost:44315/swagger/index.html';
 
-  formData:PaymentDetail = new PaymentDetail();
+  formData:PaymentDetail =  new PaymentDetail();
 
   postPaymentDetail() {
     return this.htpp.post(this.baseURL, this.formData);
